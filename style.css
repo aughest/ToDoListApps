@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #07af6f;
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    height: fit-content;
+    flex-basis: 40%;
+}
+
+.down_section{
+    margin-left: 10px;
+    flex-basis: 60%;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #07af6f;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(233, 230, 230);
+}
+
+.input_section > form > .input > input:focus{
+    outline-color: #07af6f;
+}
+
+.input_section > form > .input > label {
+    color: #000;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.search_section > h2 {
+    font-weight: 400;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+}
+
+.search_section > form > input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(233, 230, 230);
+    flex-basis: 75%;
+}
+
+.search_section > form > input:focus {
+    outline-color: #07af6f;
+}
+
+.search_section > form > button {
+    background-color: #07af6f;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 80px;
+    flex-basis: 25%;
+    margin-left: 10px;
+}
+
+.task_to {
+    margin: 16px 0 0 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.task_to > h2 {
+    font-weight: 400;
+}
+
+.task_to > .task_list {
+    padding: 16px;
+}
+
+.task_to > .task_list > .task_item {
+    padding: 8px 16px 16px 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 10px 0 #000;
+}
+
+.task_to > .task_list > .task_item:nth-child(even){
+    background-color: rgb(243, 243, 243);
+}
+
+article{
+    display: block;
+}
+
+.task_to > .task_list > .task_item > h3, p {
+    margin: 8px 0;
+}
+
+.task_to > .task_list > .task_item > p:nth-child(2):before {
+    content: "Tugas : ";
+}
+
+.task_to > .task_list > .task_item > p:nth-child(3):before {
+    content: "Tanggal Selesai : ";
+}
+
+.task_to > .task_list > .task_item > p:nth-child(4):before {
+    content: "Waktu Selesai : ";
+}
+
+.task_to > .task_list > .task_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+    color: white;
+}
+
+.task_to > .task_list > .task_item > .action > .green-unread, .green-read{
+    background-color: #07af6f;
+}
+
+.task_to > .task_list > .task_item > .action > .red {
+    background-color: rgb(212, 44, 44);
+}
+
+@media only screen and (max-width: 800px) {
+    main{
+        display: block;
+    }
+
+    .down_section{
+        margin: 20px 0 0 0;
+    }
+}

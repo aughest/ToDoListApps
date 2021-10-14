@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head_bar">
+        <h1>To Do List Apps</h1>
+    </header>
+    <main>
+        <section class="card input_section">
+            <h2>Masukkan Tugas Baru</h2>
+            <form id="inputTask" action="#">
+                <div class="input">
+                    <label for="inputTaskTitle">Tugas</label>
+                    <input id="inputTaskTitle" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputTaskAuthor">Deskripsi</label>
+                    <input id="inputTaskAuthor" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputTaskEndDate">Tanggal Selesai</label>
+                    <input id="inputTaskEndDate" type="date" required>
+                </div>
+                <div class="input">
+                    <label for="inputTaskEndTime">Jam Selesai</label>
+                    <input id="inputTaskEndTime" type="time" required>
+                </div>
+                <div class="input_inline">
+                    <label for="inputTaskIsComplete">Selesai dikerjakan</label>
+                    <input id="inputTaskIsComplete" type="checkbox">
+                </div>
+                <button id="taskSubmit" type="submit">Masukkan Tugas</button>
+            </form>
+        </section>
+
+        <div class="down_section">
+            <section class="card search_section">
+                <h2>Cari Tugas</h2>
+                <form id="searchTask" action="#">
+                    <!-- <label for="searchTaskTitle">Nama Tugas</label> -->
+                    <input id="searchTaskTitle" type="text" placeholder="Nama Tugas">
+                    <button id="searchSubmit" type="submit">Cari</button>
+                </form>
+            </section>
+            
+            <section class="card task_to">
+                <h2>Belum selesai dikerjakan</h2>
+    
+                <div id="incompleteTaskshelfList" class="task_list">
+                </div>
+            </section>
+    
+            <section class="card task_to">
+                <h2>Selesai dikerjakan</h2>
+    
+                <div id="completeTaskshelfList" class="task_list">
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="dom.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
