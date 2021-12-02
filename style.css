@@ -173,7 +173,7 @@ article{
 }
 
 .task_to > .task_list > .task_item > p:nth-child(2):before {
-    content: "Tugas : ";
+    content: "Deskripsi : ";
 }
 
 .task_to > .task_list > .task_item > p:nth-child(3):before {
